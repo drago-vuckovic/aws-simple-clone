@@ -1,0 +1,2 @@
+ALTER TABLE "statistic"
+    ADD COLUMN num_of_files INTEGER NOT NULL DEFAULT 0;

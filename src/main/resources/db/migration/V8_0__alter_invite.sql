@@ -1,0 +1,2 @@
+ALTER TABLE "invitation"
+ADD COLUMN status INTEGER NOT NULL;

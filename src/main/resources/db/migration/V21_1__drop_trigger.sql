@@ -1,0 +1,1 @@
+DROP TRIGGER decrement_num_of_files ON file;

@@ -1,0 +1,3 @@
+ALTER TABLE "tenant"
+    ADD COLUMN timestamp TIMESTAMP NOT NULL;
+

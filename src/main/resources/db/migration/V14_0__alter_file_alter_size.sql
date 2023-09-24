@@ -1,0 +1,2 @@
+ALTER TABLE "file"
+    ALTER COLUMN "size" DROP NOT NULL;

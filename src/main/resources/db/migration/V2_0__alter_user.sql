@@ -1,0 +1,5 @@
+ALTER TABLE "user"
+ADD COLUMN verification_code CHARACTER VARYING(64);
+
+ALTER TABLE "user"
+ADD COLUMN enabled BOOLEAN;

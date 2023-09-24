@@ -1,0 +1,11 @@
+CREATE TABLE "bucket" (
+    id SERIAL PRIMARY KEY,
+    size DOUBLE PRECISION NOT NULL,
+    capacity DOUBLE PRECISION NOT NULL,
+    name CHARACTER VARYING(255) NOT NULL,
+    tenant_id INTEGER NOT NULL,
+    CONSTRAINT fk_tenant_bucket
+    FOREIGN KEY (tenant_id)
+    REFERENCES tenant(id)
+    ON DELETE CASCADE
+)

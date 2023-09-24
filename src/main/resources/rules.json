@@ -1,0 +1,177 @@
+{
+  "rules": [
+    {
+      "methods": [
+        "GET"
+      ],
+      "pattern": "/api/users/logged-in",
+      "roles": [
+        "OWNER",
+        "ADMIN",
+        "USER"
+      ]
+    },
+    {
+      "methods": [
+        "GET"
+      ],
+      "pattern": "/api/users/bucket-info",
+      "roles": [
+        "OWNER",
+        "ADMIN",
+        "USER"
+      ]
+    },
+    {
+      "methods": [
+        "GET"
+      ],
+      "pattern": "/api/users/**",
+      "roles": [
+        "OWNER",
+        "ADMIN"
+      ]
+    },
+    {
+      "methods": [
+        "PATCH"
+      ],
+      "pattern": "/api/users/**",
+      "roles": [
+        "OWNER",
+        "ADMIN"
+      ]
+    },
+    {
+      "methods": [
+        "PUT"
+      ],
+      "pattern": "/api/users/**/password",
+      "roles": [
+        "OWNER",
+        "ADMIN",
+        "USER"
+      ]
+    },
+    {
+      "methods": [
+        "PUT"
+      ],
+      "pattern": "/api/users/**/company-name",
+      "roles": [
+        "OWNER"
+      ]
+    },
+    {
+      "methods": [
+        "PUT"
+      ],
+      "pattern": "/api/users/**/profile-details",
+      "roles": [
+        "OWNER",
+        "ADMIN",
+        "USER"
+      ]
+    },
+    {
+      "methods": [
+        "GET"
+      ],
+      "pattern": "/api/invitations/cancel/*",
+      "roles": [
+        "OWNER",
+        "ADMIN"
+      ]
+    },
+    {
+      "methods": [
+        "POST",
+        "GET"
+      ],
+      "pattern": "/api/invitations/**",
+      "roles": [
+        "OWNER",
+        "ADMIN"
+      ]
+    },
+    {
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE",
+        "PATCH"
+      ],
+      "pattern": "/api/file/**",
+      "roles": [
+        "OWNER",
+        "ADMIN",
+        "USER"
+      ]
+    },
+    {
+      "methods": [
+        "GET",
+        "POST",
+        "PUT",
+        "DELETE",
+        "PATCH"
+      ],
+      "pattern": "/api/folder/**",
+      "roles": [
+        "OWNER",
+        "ADMIN",
+        "USER"
+      ]
+    },
+    {
+      "methods": [
+        "PUT"
+      ],
+      "pattern": "/api/tenants/**",
+      "roles": [
+        "OWNER"
+      ]
+    },
+    {
+      "methods": [
+        "GET"
+      ],
+      "pattern": "/api/subscriptions",
+      "roles": [
+        "OWNER"
+      ]
+    },
+    {
+      "methods": [
+        "GET"
+      ],
+      "pattern": "/api/statistics/**",
+      "roles": [
+        "OWNER",
+        "ADMIN",
+        "USER"
+      ]
+    },
+    {
+      "methods": [
+        "GET", "POST","DELETE","PUT"
+      ],
+      "pattern": "/api/lambda/**",
+      "roles": [
+        "OWNER",
+        "ADMIN",
+        "USER"
+      ]
+    },
+    {
+      "methods": [
+        "GET"
+      ],
+      "pattern": "/dummy",
+      "roles": [
+        "OWNER"
+      ]
+    }
+  ]
+}
